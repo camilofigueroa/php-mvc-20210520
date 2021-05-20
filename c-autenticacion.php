@@ -1,5 +1,5 @@
 <?php
 
-    $seccion = "v-inicio.php";
+    $seccion = "v-autenticacion.php";
 
     include( "v-plantilla.php" );
