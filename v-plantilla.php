@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title></title>
+        <title>Título del sitio.</title>
 
         <link rel="stylesheet" type="text/css" href="css/estilo.css">
     </head>
