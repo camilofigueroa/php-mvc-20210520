@@ -1,18 +1,30 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
+
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        
         <title>Título del sitio.</title>
 
         <link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/bootstrap-responsive.css" rel="stylesheet">
     </head>
 
     <body>
 
-        <a href="c-inicio.php">Inicio</a>
-        <a href="c-contactos.php">Contacto</a>
-        <a href="c-autenticacion.php">Autenticación</a>
-        <hr>
+        <?php include( "v-menu.php" ); ?>
 
-        <?php include( $seccion ); ?>
+        <div class="container"><!-- Ojo con este contenedor -->
+
+            <?php include( $seccion ); ?>
+            
+        </div> <!-- /container -->
+
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap-collapse.js"></script> 
 
     </body>
 </html>
