@@ -28,6 +28,10 @@
             return $resultado;
         }
 
+        /**
+         * Trae o muestra las personas que no tienen asignadas citas médicas.
+         * 
+         */
         static function consultar_citas_medicas()
         {
             $conexion = self::conectar();
@@ -37,6 +41,23 @@
             $sql .= " FROM tb_personas ";
             $sql .= " WHERE documento not in ";
             $sql .= " ( SELECT documento FROM tb_citas_medicas ) ";
+            //echo $sql;
+            $resultado = $conexion->query( $sql );
+
+            return $resultado;
+        }
+
+        /**
+         * Trae o muestra las citas médicas.
+         * 
+         */
+        static function consultar_citas()
+        {
+            $conexion = self::conectar();
+     
+            //Esta clase es del modelo.
+            $sql  = " SELECT * ";
+            $sql .= " FROM tb_citas_medicas ORDER BY fecha_cita DESC ";
             //echo $sql;
             $resultado = $conexion->query( $sql );
 
