@@ -12,6 +12,7 @@
             <ul class="nav">
               <li class="active"><a href="c-inicio.php">Inicio</a></li>
               <li><a href="c-contactos.php">Contacto</a></li>
+              <li><a href="c-cita.php">Citas</a></li>
               <li><a href="c-autenticacion.php">Autenticación</a></li>
             </ul>
           </div><!--/.nav-collapse -->
